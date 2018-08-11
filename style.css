@@ -1,7 +1,4 @@
-html {
-    /* Hack to to live-reload flicking transitions */
-    display: block !important; 
-    
+html {   
     --header-height: 3.75em;
     --gap: 0.75rem;
 
