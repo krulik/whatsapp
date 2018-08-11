@@ -1,4 +1,5 @@
-// quick an dirty script to send messages!
+// Quick an dirty script that sends and receives messages from the server in real-time.
+// Just kidding. It only duplicates the first message and changes its content.
 
 const historyNode = document.querySelector('.Chat-main');
 const inputNode = document.querySelector('#new-msg');
