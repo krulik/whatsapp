@@ -1,9 +1,8 @@
 
 
 ## User Photos:
-https://uifaces.co/
 https://randomuser.me/photos
-https://uifaces.com/
+https://uifaces.co/
 
 ## Icons
 https://fontawesome.com/icons?d=gallery
