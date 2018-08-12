@@ -1,12 +1,9 @@
 // Quick an dirty script that sends and receives messages from the server in real-time.
 // Just kidding. It a simple script that duplicates the first message and changes its content.
-
 const historyNode = document.querySelector('.Chat-main');
 const inputNode = document.querySelector('#new-msg');
 
 inputNode.addEventListener('keydown', event => {
-    const shouldPrepend = event.target.dataset.insertMethod === 'prepend';
-
     // on any key other than Enter, continue as normal
     if (event.keyCode !== 13) return;
 
@@ -16,13 +13,16 @@ inputNode.addEventListener('keydown', event => {
     const msgNode = document.querySelector('.Message').cloneNode(true);
     msgNode.querySelector('.Message-content').textContent = event.target.value;
 
-    if (shouldPrepend) {
-        historyNode.prepend(msgNode);
-    } else {
-        historyNode.append(msgNode);
-    }
+    historyNode.appendChild(msgNode);
 
     event.target.value = '';
+
+    requestAnimationFrame(() => {
+        historyNode.scrollTo({
+            top: historyNode.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
 });
 
 // fake chatTabs

@@ -364,7 +364,7 @@ p.ChatTab-preview {
     padding: 2.81rem;
     position: relative;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .Message {
