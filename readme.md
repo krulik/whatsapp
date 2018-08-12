@@ -27,11 +27,13 @@ html {
 ```
 
 
-
 ## Animation
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
 
 
+### Easing functions
+https://easings.net/
 
 
 ## Flexbox

@@ -10,7 +10,7 @@ inputNode.addEventListener('keydown', event => {
     event.preventDefault();
 
     // on Enter key pressed, clone the first message, change its content and prepend
-    const msgNode = document.querySelector('.Message').cloneNode(true);
+    const msgNode = historyNode.firstElementChild.cloneNode(true);
     msgNode.querySelector('.Message-content').textContent = event.target.value;
 
     historyNode.prepend(msgNode);
