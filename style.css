@@ -262,7 +262,8 @@ button.Btn {
 }
 
 
-h1.ChatTab-name {
+h3.ChatTab-name {
+    font-size: 1em;
     margin: 0;
     font-weight: normal;
 }
@@ -359,12 +360,11 @@ p.ChatTab-preview {
     background: rgba(0,0,0,0.1);
 }
 
-
 .Chat-main {
     padding: 2.81rem;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .Message {

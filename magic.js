@@ -13,16 +13,16 @@ inputNode.addEventListener('keydown', event => {
     const msgNode = document.querySelector('.Message').cloneNode(true);
     msgNode.querySelector('.Message-content').textContent = event.target.value;
 
-    historyNode.appendChild(msgNode);
+    historyNode.prepend(msgNode);
 
     event.target.value = '';
 
-    requestAnimationFrame(() => {
-        historyNode.scrollTo({
-            top: historyNode.scrollHeight,
-            behavior: 'smooth'
-        });
-    });
+    // requestAnimationFrame(() => {
+    //     historyNode.scrollTo({
+    //         top: historyNode.scrollHeight,
+    //         behavior: 'smooth'
+    //     });
+    // });
 });
 
 // fake chatTabs
