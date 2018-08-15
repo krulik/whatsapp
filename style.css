@@ -349,6 +349,7 @@ p.ChatTab-preview {
     margin: 0 0;
     display: block;
     color: #4D4D4D;
+    background: transparent;
 }
 
 .Menu-option:hover {
