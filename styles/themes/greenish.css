@@ -1,0 +1,16 @@
+.theme-greenish {
+  font-family: sans-serif;
+}
+.theme-greenish body {
+  background-color: var(--c-brown-gray);
+  color: var(--c-black);
+}
+.theme-greenish .ChatTab-last-seen {
+  color: var(--c-gray);
+}
+.theme-greenish p.ChatTab-preview {
+  color: var(--c-gray-dark);
+}
+.theme-greenish .ChatTab {
+  border-bottom: 1px solid var(--c-gray);
+}

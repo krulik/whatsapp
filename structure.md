@@ -1,0 +1,15 @@
+/
+  /styles
+    /components
+      button.css
+      search.css
+      menu.css
+      media.css
+      ...
+    /themes
+      greenish.css
+      redish.css
+    config.css
+    main.css
+  index.html
+  components.html

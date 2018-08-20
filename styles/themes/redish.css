@@ -1,0 +1,17 @@
+.theme-redish {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+}
+.theme-redish body {
+  background-color: var(--c-red);
+  color: var(--c-white);
+}
+.theme-redish .ChatTab-last-seen {
+  color: var(--c-rose);
+}
+.theme-redish p.ChatTab-preview {
+  color: var(--c-rose-light);
+}
+.theme-redish .ChatTab {
+  border-bottom: 1px solid var(--c-red-dark);
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-redish">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Components</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset Asaf's stuff */
+    html {
+      background-color: initial;
+      font-family: initial;
+    }
+    body {
+      display: block;
+      height: auto;
+    }
+    .ChatTab-avatar {
+      width: 3.25em;
+      margin-right: calc(var(--gap) * 0.8);
+    }
+    .ChatTab-last-seen {
+      color: inherit;
+    }
+    p.ChatTab-preview {
+      color: inherit;
+    }
+    .ChatTab {
+      border-bottom: none;
+    }
+    /* End reset */
+
+    /* Config */
+    :root {
+      --c-brown-gray: #DBDBD4;
+      --c-gray: #979898;
+      --c-gray-dark: #666666;
+      --c-black: #333;
+      --c-white: #fff;
+
+      --c-red: lightcoral;
+      --c-red-dark: indianred;
+      --c-rose: mistyrose;
+      --c-rose-light: linen;
+    }
+
+    /* Theme */
+    .theme-greenish {
+      font-family: sans-serif;
+    }
+    .theme-greenish body {
+      background-color: var(--c-brown-gray);
+      color: var(--c-black);
+    }
+    .theme-greenish .ChatTab-last-seen {
+      color: var(--c-gray);
+    }
+    .theme-greenish p.ChatTab-preview {
+      color: var(--c-gray-dark);
+    }
+    .theme-greenish .ChatTab {
+      border-bottom: 1px solid var(--c-gray);
+    }
+
+    .theme-redish {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 0.8em;
+    }
+    .theme-redish body {
+      background-color: var(--c-red);
+      color: var(--c-white);
+    }
+    .theme-redish .ChatTab-last-seen {
+      color: var(--c-rose);
+    }
+    .theme-redish p.ChatTab-preview {
+      color: var(--c-rose-light);
+    }
+    .theme-redish .ChatTab {
+      border-bottom: 1px solid var(--c-red-dark);
+    }
+
+    .ChatTab--large {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="ChatTab">
+    <div class="ChatTab-avatar">
+        <img class="Avatar" alt="" src="https://randomuser.me/api/portraits/women/28.jpg" />
+    </div>
+    <section class="ChatTab-info">
+        <div class="ChatTab-header">
+            <div class="ChatTab-name">Lisa Gilbert</div>
+            <Time class="ChatTab-last-seen">Yesterday</Time>
+        </div>
+        <p class="ChatTab-preview">
+            <span class="Status Status--seen">
+                <i class="fas fa-check"></i>
+            </span>
+            consectetur adipisicing elit.
+        </p>
+    </section>
+  </div>
+  <div class="ChatTab ChatTab--large">
+      <div class="ChatTab-avatar">
+          <img class="Avatar" alt="" src="https://randomuser.me/api/portraits/women/28.jpg" />
+      </div>
+      <section class="ChatTab-info">
+          <div class="ChatTab-header">
+              <div class="ChatTab-name">Lisa Gilbert</div>
+              <Time class="ChatTab-last-seen">Yesterday</Time>
+          </div>
+          <p class="ChatTab-preview">
+              <span class="Status Status--seen">
+                  <i class="fas fa-check"></i>
+              </span>
+              consectetur adipisicing elit.
+          </p>
+      </section>
+    </div>
+</body>
+</html>
